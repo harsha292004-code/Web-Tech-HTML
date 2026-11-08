@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+     <!-- | Path | Meaning |
+|---|---|
+| `photo.jpg` | Same folder as HTML |
+| `images/photo.jpg` | Inside images folder |
+| `../photo.jpg` | One folder backwards |
+| `./images/photo.jpg` | Images folder in current directory |
+| `/images/photo.jpg` | Root-relative path (depends on server root) | -->
+<body align="center">
+    <!-- img  tag its attributes are src height and width and alt - for givig the alternate name -->
+    <img src="https://images.pexels.com/photos/32591593/pexels-photo-32591593.jpeg" alt="" height="400px" width="45%">
+    <!-- picture tag allows dev to insdet a multiple images and let the browser choose the best one based on the screen size,resolution or format -->
+     <hr>
+     <picture>
+        <!-- mobile device -->
+         <source media="(max-width: 425px )" srcset="">
+        <!-- Tablet -->
+         <source media="(min-width: 768px ) and (max-width : 1440px)" srcset="">
+         <!-- default -->
+          <img src="https://images.pexels.com/photos/32591593/pexels-photo-32591593.jpeg" alt="">
+     </picture>
+     <hr>
+     <!-- local path use relative path or absolute path depends on the laptops  -->
+     <img src="../Assets/WhatsApp Image 2026-08-13 at 6.02.21 PM.jpeg" alt="" width="300px" height="500px">
+     <hr>
+     <!-- Allows ot embed the video in a webpage autoplay is used to autoplay the
+       video after opening the webpage (muted) will not play the video sound (loop) will make the video loop -->
+     <video src="https://media.istockphoto.com/id/487923877/video/various-lightning-strikes-with-sound-rain-thunder-in-cloudy-sky.mp4?s=mp4-640x640-is&k=20&c=VkgxGzcawopwvK81NpjDRTteS_1chh9zzewqUT_dhyY=" width="900px" autoplay controls loop muted></video>
+     <!-- use (contorls) to get the contorls for the video -->
+      <!-- Video will be played automatically when its muted -->
+      <hr>
+    <video src="..\Assets\istockphoto-2176963076-640_adpp_is.mp4" controls></video>
+    <!-- For Multiple Source -->
+     <hr>
+    <video controls><!--Multiple videos can be only used when we need the same video but diffrent formats-->
+        <source src="https://media.istockphoto.com/id/472725437/video/hands-typing-on-notebook-keyboard.mp4?s=mp4-640x640-is&k=20&c=d_mjOGAvto15dcZ2ULq0dPetDF1JE1Ya7n-KVQKNG48=">
+        <track></track><!--This allows the dev to add subtitles,captions,Descriptions and ChapterTitle  -->
+    </video>
+    <hr>
+    <video controls autoplay muted>
+        <source src="https://media.istockphoto.com/id/2165884965/video/heavy-thunderstorm-with-hail.mp4?s=mp4-640x640-is&k=20&c=oKuh1j9DF1ox6UEUQwncbubK-pwBm21W-Tbd78WXstE=">
+    </video>
+    <hr>
+    <audio src="..\Assets\royalty_free_music-soft-piano-100-bpm-121529.mp3" controls></audio>
+    <!-- has the same attributes as the video tag -->
+    <!-- Can use the multiple sources just like the video tag i have shown above there -->
+</body>
+</html>
