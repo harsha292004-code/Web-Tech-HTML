@@ -8,7 +8,9 @@
 <body>
     <!-- Creating form -->
     <form action="">
-        <Fieldset style="border-color: blue; border-width: 3px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style:italic; ">
+        <Fieldset style="border-color: blue; border-width: 3px;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-style:italic; "><!--this helps to get the border or box for
+         the form label are the text inside the form and input tag is used to set input and its type-->
                 <legend align="center">LOGIN PAGE</legend>
                 <label for="username">Enter the Name :</label>
                 <input type="text" placeholder="Username" id="username"><br><br>
@@ -48,8 +50,8 @@
 </head>
 <body>
     <form action="">
-        <fieldset style="border-radius: 5px; border-color: green;">
-            <!-- This is the sample of radio and checkbox -->
+        <fieldset style="border-width: 5px; border-color: green;border-style: dashed;">
+            <!-- This is the sample of radio button-->
             <strong>Select your Emotional state :</strong><br><br>
             <input type="radio" id="happy">
             <label for="happy">HAPPY</label><br><br>
@@ -59,6 +61,26 @@
             <label for="moti">MOTIVATED</label><br><br>
             <input type="radio" id="disciplined">
             <label for="disciplined">DISCIPLINED</label><br><br>
+            <!-- Example of the checkbox button -->
+             <strong>Select what you want :</strong><br><br>
+             <input type="checkbox" id="Money">
+             <label for="Money">MONEY</label><br><br>
+             <input type="checkbox" id="health">
+             <label for="health">HEALTH</label><br><br>
+             <input type="checkbox" id="happiness">
+             <label for="happiness">HAPPINESS</label><br><br>
+             <input type="checkbox" id="Fam and friends">
+             <label for="Fam and friends">FAM AND FRIENDS</label><br><br>
+             <hr color="skyblue">
+             <!-- Dropdown menu -->
+            <!-- we use the select tag and iside that we use the option tag -->
+             <select name="" id="Dropdown">
+                <option value="" hidden>----Choose Here----</option><!--Can use the hidden attribute to hide the option-->
+                <option value="">Belief</option>
+                <option value="">Trust</option>
+                <option value="">Faith</option>
+             </select>
+             <hr>
         </fieldset>
     </form>
 </body>
